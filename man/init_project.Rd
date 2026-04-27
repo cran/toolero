@@ -5,7 +5,7 @@
 \title{Initialize a new R project with a standard folder structure}
 \usage{
 init_project(
-  file_path,
+  path,
   use_renv = TRUE,
   use_git = TRUE,
   extra_folders = NULL,
@@ -14,7 +14,7 @@ init_project(
 )
 }
 \arguments{
-\item{file_path}{A character string with the path and name of the new
+\item{path}{A character string with the path and name of the new
 project (e.g., \code{"~/Documents/my-project"}).}
 
 \item{use_renv}{Logical. If \code{TRUE}, initializes \code{renv} in the new project.
@@ -42,14 +42,14 @@ opinionated folder structure suited for research workflows. It optionally
 initializes \code{renv} for package management and git for version control.
 }
 \examples{
-\donttest{
-init_project(file_path = file.path(tempdir(), "project1"),
+\dontrun{
+init_project(path = file.path(tempdir(), "project1"),
              use_renv = FALSE, use_git = FALSE)
 
-init_project(file_path = file.path(tempdir(), "project2"),
+init_project(path = file.path(tempdir(), "project2"),
              uw_branding = TRUE, use_renv = FALSE, use_git = FALSE)
 
-init_project(file_path = file.path(tempdir(), "project3"),
+init_project(path = file.path(tempdir(), "project3"),
              extra_folders = c("notebooks"),
              use_renv = FALSE, use_git = FALSE)
 }

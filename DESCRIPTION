@@ -1,6 +1,6 @@
 Package: toolero
 Title: A Toolkit for Research Workflows
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: 
     person("Erwin", "Lares", , "erwin.lares@wisc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-3284-828X"))
@@ -16,17 +16,17 @@ Depends: R (>= 4.2.0)
 Encoding: UTF-8
 Language: en-US
 RoxygenNote: 7.3.2
-Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0), withr
+Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0),
 Config/testthat/edition: 3
 Imports: cli, fs, glue, janitor, purrr, readr, renv, tibble, usethis,
-        yaml
+        yaml, rlang, rvest, xml2, quarto, withr
 URL: https://github.com/erwinlares/toolero,
         https://erwinlares.github.io/toolero/
 BugReports: https://github.com/erwinlares/toolero/issues
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2026-04-22 16:56:38 UTC; lares
+Packaged: 2026-04-27 15:23:42 UTC; lares
 Author: Erwin Lares [aut, cre] (ORCID: <https://orcid.org/0000-0002-3284-828X>)
 Maintainer: Erwin Lares <erwin.lares@wisc.edu>
 Repository: CRAN
-Date/Publication: 2026-04-24 18:40:02 UTC
+Date/Publication: 2026-04-27 18:40:02 UTC
